@@ -14,15 +14,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="/">
+              <picture>
+                <source type="image/svg+xml" srcset="/img/logo.svg">
+                <source type="image/webp" srcset="/img/logo.webp">
+                <img src="/img/logo.png" alt="Förskolan Nätet (logga)">
+              </picture>
+            </a>
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <!-- {{ page.permalink }} -->
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Hem</a></li>
-                <li><a href="/forening">Föreningen</a></li>
-                <li><a href="/verksamhet">Verksamheten</a></li>
-                <li><a href="/personal">Personalen</a></li>
-                <li><a href="/kontakt">Kontakta oss</a></li>
+                {% assign sorted = (site.pages | sort: 'order') %}
+                {% for link in sorted %}
+                  <li {% if page.permalink == link.permalink %}class="active"{% endif %}><a href="{{ link.permalink }}">{{ link.title }}</a></li>
+                {% endfor %}
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

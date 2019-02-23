@@ -67,17 +67,14 @@ a:active {
 header {
   background: #fff;
   padding: 20px 0;
-  background-image: url('/img/logo.svg');
-  background-repeat: no-repeat;
-  background-size: 150px;
-  background-position: 100px 10px;
 }
 header .navbar {
   margin-bottom: 0px;
   border: 0px;
 }
-header .navbar-brand {
-  padding-top: 5px;
+header .navbar-brand img {
+  height: 60px;
+  margin-top: -20px;
 }
 header .navbar-default {
   background: none;
@@ -86,13 +83,24 @@ header .navbar-default {
 header .navbar-default .navbar-nav {
   padding-top: 10px;
 }
+header .navbar-default .navbar-nav li {
+  margin-left: 10px;
+}
 header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 10px 26px;
   font-size: 15px;
+  transition: all 500ms;
 }
-font header .navbar-default .navbar-nav li a:hover {
+header .navbar-default .navbar-nav li a:hover {
   color: #000;
+  background-color: #eee;
+}
+header .navbar-default .navbar-nav li.active>a {
+  color: #fff;
+  background-color: #a35839;
+  pointer-events: none;
+  cursor: default;
 }
 /*---------------------------------------------
 					Index Start
@@ -117,7 +125,7 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #a3583999, #351d1399);
+  background: linear-gradient(to left, #a35839, #351d13);
   opacity: 0.8;
 }
 #slider .block {
@@ -384,6 +392,208 @@ section[data-background="derby"] {
 }
 #clients-logo-section .clients-logo-img {
   padding: 0px 50px;
+}
+/*---------------------------------------------
+					forening Start
+-----------------------------------------------*/
+#forening {
+  background: url("/img/section-bg/forening.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 107px;
+  position: relative;
+  background-attachment: fixed;
+}
+#forening:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #a35839, #351d13);
+  opacity: 0.8;
+}
+#forening .block {
+  color: #E3E3E4;
+  margin: 0 auto;
+  padding-left: 90px;
+  text-align: center;
+}
+#forening .block h1 {
+  font-weight: 300;
+  font-size: 45px;
+  letter-spacing: 6px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+#forening .block p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+/*--
+	responsibilities Start
+--*/
+#responsibilities {
+  text-align: center;
+  padding: 90px 0;
+}
+#responsibilities .responsibilities-item {
+  text-align: left;
+  padding-bottom: 30px;
+}
+#responsibilities .responsibilities-item img {
+  height: 150px;
+}
+#responsibilities .responsibilities-item h4 {
+  padding-top: 20px;
+  margin: 0;
+  color: #666;
+}
+#responsibilities .responsibilities-item p {
+  color: #888;
+  padding-top: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+/*--
+	board Start
+--*/
+#board {
+  padding: 90px 0;
+}
+#board .section-title h2 {
+  padding: 15px;
+}
+#board .board-item {
+  padding-bottom: 30px;
+}
+#board .board-item img {
+  height: 150px;
+}
+#board .board-item h4 {
+  padding-top: 20px;
+  margin: 0;
+  color: #666;
+}
+#board .board-item p {
+  color: #888;
+  padding-top: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+/*---------------------------------------------
+					what we do Start
+-----------------------------------------------*/
+.container li {
+  margin-bottom: 10px;
+}
+.container blockquote {
+  font-size: 12px;
+  padding: 10px 20px 20px;
+  margin: 10px 0 20px;
+  position: relative;
+}
+.container blockquote cite {
+  font-weight: bolder;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  right: 0;
+}
+#personal-header,
+#what-we-do-header,
+#contact-header {
+  background: url("../img/section-bg/what-we-do.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 107px;
+  position: relative;
+  background-attachment: fixed;
+}
+#contact-header:before,
+#personal-header:before,
+#what-we-do-header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #a35839, #351d13);
+  opacity: 0.8;
+}
+#contact-header .block,
+#personal-header .block,
+#what-we-do-header .block {
+  color: #E3E3E4;
+  margin: 0 auto;
+  padding-left: 90px;
+}
+#contact-header .block h1,
+#personal-header .block h1,
+#what-we-do-header .block h1 {
+  font-weight: 300;
+  font-size: 45px;
+  letter-spacing: 6px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+#contact-header .block p,
+#personal-header .block p,
+#what-we-do-header .block p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+#what-we-do-header ol {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 500px;
+  padding-left: 90px;
+  color: #E3E3E4;
+}
+#what-we-do-friluftsframjandet,
+#personal {
+  padding: 70px 0;
+}
+#personal .avatar img {
+  object-fit: cover;
+  object-position: top center;
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+}
+#what-we-do-header ol ol {
+  padding-left: 20px;
+}
+#contact-header {
+  background-image: url("/img/section-bg/plan.jpg");
+}
+#personal-header {
+  background-image: url("/img/section-bg/plan.jpg");
+}
+@media only screen and (max-width: 767px){
+  #contact-header .block,
+  #personal-header .block,
+  #what-we-do-header .block,
+  #forening .block {
+    padding-left: inherit;
+  }
+  #what-we-do-header ol  {
+    padding-left: 30px;
+  }
 }
 /*---------------------------------------------
 					Work Start
@@ -746,6 +956,7 @@ section[data-background="derby"] {
 }
 .google-map {
   position: relative;
+  overflow: hidden;
 }
 .google-map #map {
   width: 100%;

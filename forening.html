@@ -1,27 +1,106 @@
 ---
 layout: page
 title: Föreningen
-permalink: /forening/
+permalink: /forening
+order: 4
 ---
 <!-- Slider Start -->
-<section id="global-header">
+<section id="forening">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Get the latest on what we're doing</h1>
-          <p>Catch up with us, anytime and anywhere</p>
+          <h1>FÖRENINGEN</h1>
+          <p>Föräldrakooperativet Nätet bildades 1997. Genom vårt föreningsarbete har vi föräldrar större möjlighet att vara med och påverka våra barns vardag. I den öppna dialog som finns mellan föräldrar och personal strävar vi mot ett gemensamt mål – barnens bästa!
+          Vi ser det som en förmån att aktivt få ta del i den dagliga verksamheten genom våra föräldrainsatser. Det skapar en unik gemenskap mellan alla föräldrar, barn och personal samt lär barnen att ta ansvar för sin egen vardagsmiljö. Dessutom anordnar vi trevliga arrangemang för medlemmar och personal t.ex. julgransplundring, utflykter och fester.</p>
+          <p>Föräldrainsatsen innebär att två föräldrar arbetar i barngruppen från klockan 15.00. När barnen har gått hem städar vi lokalerna. Utöver detta är varje förälder också med i en av fem arbetsgrupper.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-{% for post in site.posts %}
-<div class="post-area">
-  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
-  <p class="post-date">{{ post.date | date_to_long_string }}</p>
-  <p>
-    {{ post.content | strip_html | truncatewords: 50 }}
-  </p>
-</div>
-{% endfor %}
+<!-- economy Start -->
+<section id="responsibilities">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>EKONOMI OCH FÖRÄLDRARINSATS</h2>
+        <p>Förskolan Nätet drivs som ett föräldrakooperativ. Det innebär att du som förälder har möjlighet att vara med och påverka ditt barns vardag och att du får en unik insyn i verksamheten. Vi har en föräldrastyrelse som ansvarar för bland annat personal, ekonomi och lokaler.</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-6 col-md-6">
+        <div class="responsibilities-item">
+          <h4>För barn 0-3 år sker indelningen enligt nedan</h4>
+          <ul>
+            <li>Upp till 15 timmar per vecka:   350:-</li>
+
+            <li>Mer än 15 timmar per vecka:   700:-</li>
+          </ul>
+          <h4>För barn 4-5 år (september –maj)</h4>
+          <p><i>(Allmän förskola gäller fr.o.m. september det år barnet fyller 3 år.)</i></p>
+          <ul>
+            <li>Upp till 15 timmar per vecka:   0:-</li>
+
+            <li>Mer än 15 timmar per vecka:   700:-</li>
+          </ul>
+          <p>Avgiften betalas i förskott. Nyinskrivna barn betalar halva avgiften den första månaden</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="responsibilities-item">
+          <p>Eftersom det är ett kooperativ förväntas du som förälder vara med och hjälpa till. I snitt är varje medlem (förälder) med på förskolan en gång i månaden. Insatsen består i att vara med från klockan 15 och hjälpa till med barnen, som oftast är ute, och därefter städa en avdelning.</p>
+          <p>Tack vare att föräldrarna är med och hjälper till kan platsavgiften hållas låg. Under 2016 ligger kostnaden för helplats på 700 kronor. En månad om året är avgiftsfri.</p>
+          <p>Som medlem förväntas du även delta i någon av våra grupper, som har hand om till exempel vår inne- eller utemiljö eller vår arrangemangsgrupp som anordnar aktiviteter för föräldrar, barn och pedagoger. Vi har även en personal- och ekonomigrupp.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>FÖRENINGENS STADGAR</h2>
+          <p>Nätet bedrivs som en ekonomisk förening. Genom att klicka på pdf-filen kan du ta del av våra stadagar.</p>
+          <a class="btn btn-default btn-call-to-action" href="/documents/Stadgar-17-11-28.pdf">Hämta stadgar (PDF, 324KB)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="board">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>STYRELSEN</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <p>Nätet är en ekonomisk förening och har en styrelse bestående av sju föräldrar som sammanträder en gång per månad. Vår förskolechef är med på dessa möten och representerar personalen.</p>
+          <p>De som tar plats i styrelsen kompenserar för den insats de gör genom att få färre dagar som de är med och hjälper till på förskolan.</p>
+          <p>En gång under sin tid på Nätet ska en ur varje familj kunna tänka sig att ta ett styrelseuppdrag under två år, antingen som ansvarig för någon av arbetsgrupperna, sekreterare eller ordförande.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h3>Styrelse 2016/2017</h3>
+          <ul>
+            <li>Martin Niemann, Ordförande</li>
+            <li>Cecilia Odehammar, Sekreterare</li>
+            <li>Malin Jarlbring, Kassör och ansvarig för Ekonomigruppen</li>
+            <li>Ulf Dunér, Ledamot och ansvarig för Personalgruppen</li>
+            <li>Lena Ekroth, Ledamot och ansvarig för Innegruppen</li>
+            <li>Annika Emander, Ledamot och ansvarig för Utegruppen</li>
+            <li>Henrik Johansson, Ledamot och ansvarig för Marknadsföring/IT samt arrangemangsgruppen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -6,6 +6,12 @@ $(document).ready(function(){
 
 	$("#testimonial-slider").owlCarousel({
 	    singleItem:true,
+			autoHeight: true,
+	});
+	$(".owl-page").on('click touchstart', true, function(event) {
+		$([document.documentElement, document.body]).animate({
+      scrollTop: $("#testimonial").offset().top
+    }, 1000);
 	});
 
 	$("#clients-logo").owlCarousel({
@@ -20,7 +26,7 @@ $(document).ready(function(){
 		items : 5,
 		itemsDesktop : [1199,5],
 		itemsDesktopSmall : [979,5],
-	});
+	})
 
 
 	// google map

@@ -1,0 +1,5 @@
+name: natet
+pipeline: jekyll
+type: jekyll
+domains:
+  - natet.hosting.accodeing.com

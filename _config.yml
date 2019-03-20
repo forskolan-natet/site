@@ -1,5 +1,6 @@
 
 exclude:
+  - ".git"
   - "/vendor/"
   - "Gemfile"
   - "Gemfile.lock"
@@ -17,16 +18,7 @@ keep_files:
 title: Nätet
 subtitle: Friluftförskolan
 url: "https://natet.hosting.accodeing.com/"
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
+logo: "/assets/img/logo.png"
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
-
-# Category descriptions (for archive pages)
-descriptions:
-- cat: jekyll
-  desc: "Posts describing Jekyll setup techniques."
-
-- cat: dummy
-  desc: "Just some placeholder posts, lorem ipsum and the rest."

@@ -61,6 +61,12 @@ a:active {
   font-style: italic;
   color: #666;
 }
+
+.col-clear {
+  clear: both;
+  display: none;
+}
+
 /*--
 	Header Start
 --*/
@@ -88,7 +94,7 @@ header .navbar-default .navbar-nav li {
 }
 header .navbar-default .navbar-nav li a {
   color: #333333;
-  padding: 10px 26px;
+  padding: 10px 24px;
   font-size: 15px;
   transition: all 500ms;
 }
@@ -113,7 +119,7 @@ header .navbar-default .navbar-nav li.active>a {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  padding: 200px 0 280px 0;
+  padding: 200px 0;
   position: relative;
 }
 #slider:before {
@@ -145,6 +151,41 @@ header .navbar-default .navbar-nav li.active>a {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   letter-spacing: 3px;
+}
+#slider .block .center {
+  text-align: center;
+}
+#slider .block .btn-call-to-action {
+  padding: 15px 35px;
+  border: none;
+  background-color: #d4541f;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 30px;
+}
+#slider .scroll_down {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width:100%;
+  bottom: 50px;
+  color: white;
+}
+#slider .scroll_down i {
+  transform: scale3d(1.25,0.75,1);
+  transform-origin: center;
+
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: bounce-slow;
+  animation-name: bounce-slow;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
 }
 section[data-background="derby"] {
   background-image: url("/img/section-bg/derby.jpg") !important;

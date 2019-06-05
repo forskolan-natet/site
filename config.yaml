@@ -3,4 +3,5 @@ pipeline: jekyll
 type: jekyll
 domains:
   - forskolannatet.se
+  - www.forskolannatet.se
   - natet.hosting.accodeing.com

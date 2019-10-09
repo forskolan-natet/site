@@ -606,6 +606,9 @@ section[data-background="derby"] {
   padding-left: 90px;
   color: #e3e3e4;
 }
+#what-we-do-header ul {
+  list-style: inherit;
+}
 #what-we-do-friluftsframjandet,
 #personal {
   padding: 70px 0;

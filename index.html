@@ -160,8 +160,10 @@ order: 1
             {% for tm in site.data.testimonials %}
             <div>
               <div class="user">
-                <img src="{{ tm.image }}" alt="Pepole">
-                <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
+                {% if tm.image %}
+                  <img src="{{ tm.image }}" alt="People">
+                {% endif %}
+                <p><span>{{ tm.name }}</span></p>
               </div>
               <img src="img/cotation.png" alt="IMG">
               {{ tm.testimonial | markdownify }}

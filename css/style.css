@@ -32,3 +32,9 @@
 .post-area a:hover {
   color: #0D0017;
 }
+
+iframe {
+  height: 100rem;
+  width: 100%;
+  border: 0;
+}

@@ -26,9 +26,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <!-- {{ page.permalink }} -->
               <ul class="nav navbar-nav navbar-right">
-                {% assign sorted = (site.pages | sort: 'order') %}
-                {% for link in sorted %}
-                  <li {% if page.permalink == link.permalink %}class="active"{% endif %}><a href="{{ link.permalink }}">{{ link.title }}</a></li>
+                {% assign navPages = collections.all | sortByOrder %}
+                {% for link in navPages %}
+                  <li {% if page.url == link.url %}class="active"{% endif %}><a href="{{ link.url | url }}">{{ link.data.title }}</a></li>
                 {% endfor %}
               </ul>
             </div><!-- /.navbar-collapse -->

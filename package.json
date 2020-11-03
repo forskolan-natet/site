@@ -1,0 +1,22 @@
+{
+  "name": "natet-site",
+  "version": "1.0.0",
+  "description": "Main site (https://forskolannatet.se) for the cooperation.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forskolan-natet/site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/forskolan-natet/site/issues"
+  },
+  "homepage": "https://github.com/forskolan-natet/site#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}

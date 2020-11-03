@@ -145,7 +145,7 @@ order: 1
   </div>
 </section>
 <!-- Content Start -->
-{% if site.data.testimonials.size > 0 %}
+{% if testimonials.length > 0 %}
 <section id="testimonial">
   <div class="container">
     <div class="row">
@@ -157,7 +157,7 @@ order: 1
       <div class="col-md-12">
         <div class="testimonial-carousel">
           <div id="testimonial-slider" class="owl-carousel">
-            {% for tm in site.data.testimonials %}
+            {% for tm in testimonials %}
             <div>
               <div class="user">
                 {% if tm.image %}
@@ -166,7 +166,7 @@ order: 1
                 <p><span>{{ tm.name }}</span></p>
               </div>
               <img src="img/cotation.png" alt="IMG">
-              {{ tm.testimonial | markdownify }}
+              {{ tm.testimonial | markdownit }}
             </div>
             {% endfor %}
           </div>

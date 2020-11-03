@@ -4,7 +4,8 @@
   "description": "Main site (https://forskolannatet.se) for the cooperation.",
   "main": "index.js",
   "scripts": {
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",

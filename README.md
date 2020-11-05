@@ -1,6 +1,6 @@
-# Förskolan Nätet
+![logo](img/logo.png)
 
-Main site (https://forskolannatet.se) for the cooperation.
+Main site for the cooperation Friluftsförskolan Nätet, https://forskolannatet.se.
 
 Built with [11ty](https://www.11ty.dev/).
 

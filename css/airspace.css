@@ -291,6 +291,12 @@ section[data-background="derby"] {
 --*/
 #jimmy {
   background-image: url("/img/section-bg/jimmy.jpg") !important;
+}
+#matsedel {
+  background-image: url("/img/section-bg/matsedel.jpg") !important;
+}
+#jimmy,
+#matsedel {
   background-position: center 20% !important;
   width: 100%;
   display: block;
@@ -310,7 +316,8 @@ section[data-background="derby"] {
   backface-visibility: hidden;
   padding: 100px 0;
 }
-#jimmy:before {
+#jimmy:before,
+#matsedel:before {
   content: "";
   position: absolute;
   left: 0;
@@ -322,16 +329,19 @@ section[data-background="derby"] {
   background: linear-gradient(to left, #ffffffff, #ffffff99);
   opacity: 0.8;
 }
-#jimmy h2 {
+#jimmy h2,
+#matsedel h2 {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
 }
-#jimmy p {
+#jimmy p,
+#matsedel p {
   color: #5e5e5e;
   margin-bottom: 20px;
 }
-#jimmy .btn-view-works {
+#jimmy .btn-view-works,
+#matsedel .btn-view-works {
   background: #086c67;
   color: #fff;
   padding: 10px 20px;

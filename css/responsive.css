@@ -411,7 +411,7 @@ px      68    160    252    */
 	footer Start
 --*/
   footer .footer-manu {
-    padding-bottom: 55px;
+    padding-bottom: 0;
   }
 }
 /*		Wide Mobile Layout: 480px.

@@ -44,3 +44,18 @@
   width: 100%;
   border: 0;
 }
+
+.facebook-responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 57%;
+}
+
+.facebook-responsive-iframe iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}

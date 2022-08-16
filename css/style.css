@@ -33,7 +33,13 @@
   color: #0D0017;
 }
 
-iframe {
+.matsedel iframe {
+  height: 100rem;
+  width: 100%;
+  border: 0;
+}
+
+.google-map iframe {
   height: 100rem;
   width: 100%;
   border: 0;

@@ -187,8 +187,8 @@ header .navbar-default .navbar-nav li.active > a {
   -webkit-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-section[data-background="derby"] {
-  background-image: url("/img/section-bg/derby.jpg") !important;
+section[data-background="forest"] {
+  background-image: url("/img/section-bg/forest.jpg") !important;
 }
 /*--
 	wrapper Start

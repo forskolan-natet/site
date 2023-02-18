@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("movie");
   eleventyConfig.addPassthroughCopy("js");
 
   eleventyConfig.addFilter("sortByOrder", collection =>

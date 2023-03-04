@@ -3,6 +3,11 @@ const markdownIt = require("markdown-it");
 const markdownItRenderer = new markdownIt();
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setDataDeepMerge(false);
+  eleventyConfig.setLiquidOptions({
+    strictFilters: false
+  });
+
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
   eleventyConfig.addLayoutAlias("default", "layouts/default.liquid");

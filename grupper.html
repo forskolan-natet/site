@@ -1,0 +1,195 @@
+---
+layout: page
+title: Engagemang
+permalink: /grupper.html
+order: 6
+---
+
+<!-- Slider Start -->
+<section id="forening">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>Så fungerar vårt föräldrakooperativ</h1>
+                    <p>
+                        Vår förskola drivs som ett <b>föräldrakooperativ</b>, vilket betyder att vi tillsammans –
+                        familjer och
+                        personal – tar ansvar för verksamheten. Det är just engagemanget från föräldrarna som gör vår
+                        förskola personlig, trygg och levande.
+                    </p>
+                    <p>
+                        Som familj hos oss är du inte bara vårdnadshavare, <b>utan också medlem i föreningen.</b> Det
+                        innebär
+                        att du bidrar med tid och engagemang, samtidigt som du får möjlighet att påverka och vara
+                        delaktig i ditt barns vardag.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Groups Start-->
+<section id="collaboration">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Ansvarsgrupper – tillsammans får vi förskolan att fungera</h2>
+                <p>
+                    En grundpelare i föräldrakooperativet är våra ansvarsgrupper. Alla familjer deltar i en
+                    ansvarsgrupp
+                    och bidrar med sitt engagemang utifrån intresse och möjlighet. Uppgifterna är tydligt fördelade
+                    och
+                    anpassade för att fungera i vardagen, även vid sidan av arbete och familjeliv.
+                </p>
+
+
+                <div class="block">
+                    <h4 style="margin-top: 30px">Genom ansvarsgrupperna:</h4>
+
+                    <ul>
+                        <li>tar vi gemensamt ansvar för förskolans miljö och drift</li>
+                        <li>skapar vi gemenskap och lär känna varandra</li>
+                        <li>får vi insyn i hur förskolan fungerar i praktiken</li>
+                    </ul>
+                    <p style="margin-top: 30px;">
+                        Insatserna är både praktiska och organisatoriska och sker löpande under året samt vid gemensamma
+                        aktiviteter som städ- och fixardagar. Alla bidrag – stora som små – är viktiga och gör skillnad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {% if ansvarsgrupper.length > 0 %}
+<section id="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="section-title text-center">
+                <h2>Våra ansvarsgrupper</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="testimonial-carousel">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        {% for grupp in ansvarsgrupper %}
+                        <div>
+
+                            <div class="section-title">
+                                <h4><b>{{ grupp.name }}</b></h4>
+                            </div>
+                            {{ grupp.description }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+</section>
+<!--Board start-->
+<section id="board">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Så fungerar styrelsearbetet hos oss</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <p>
+                        Utöver ansvarsgrupperna ingår varje familj i styrelsearbete under två år. Styrelsen har det
+                        övergripande ansvaret för förskolan och är föreningens huvudman.
+                    </p>
+                    <p>Det innebär ansvar för:</p>
+                    <ul>
+                        <li>verksamhetens kvalitet och utveckling</li>
+                        <li>ekonomi, personal och organisation</li>
+                        <li>att lagar, regler och styrdokument följs</li>
+                        <ul>
+                            <p>
+                                Styrelsearbetet handlar inte bara om möten och protokoll – det är ett sätt att vara
+                                med och forma förskolans framtid och bidra till en stabil och välfungerande
+                                verksamhet.
+                            </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>Styrelsens roller</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="block">
+                        <ul>
+                            <li><b>Ordförande</b> leder styrelsens arbete, följer upp beslut och företräder föreningen.
+                            </li>
+                            <li><b>Kassör</b> ansvarar för ekonomi, budget, bokföring och kontakt med kommunen.</li>
+                            <li><b>Personalansvarig</b> ansvarar för arbetsgivarfrågor, personalgruppens arbete och
+                                arbetsmiljö.</li>
+                            <li><b>Arrangemangsansvarig</b> leder arrangemangsgruppen och ansvarar för aktiviteter,
+                                marknadsföring, faddertilldelning och gåvohantering.
+                            </li>
+                            <li><b>IT-gruppsansvarig</b> samordnar IT-gruppens arbete och ansvarar för tekniska system.
+                            </li>
+                            <li><b>Utegruppsansvarig</b> leder arbetet med utemiljön och dess utveckling.</li>
+                            <li><b>Innegruppsansvarig</b> ansvarar för inomhusmiljön, lokaler och kontakt med
+                                fastighetsägare</li>
+                            <li><b>Sekreterare</b> ansvarar för administration, protokoll, medlemslistor och
+                                dokumentation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <h3>Ett gemensamt ansvar och delad glädje</h3>
+            <p>
+                Att vara del av ett föräldrakooperativ innebär engagemang, men också gemenskap, inflytande och närhet.
+                Tillsammans skapar vi en förskola där barnen står i centrum och där vi vuxna lär känna varandra och
+                bygger något gemensamt.
+            </p>
+            <p>
+                Har du frågor om vad föräldrainsatsen innebär? Kontakta ordförande:
+            </p>
+        </div>
+    </div>
+</section>
+{% if ansvarsgrupper.length > 0 %}
+<section id="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="section-title text-center">
+                <h2>Våra ansvarsgrupper</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="testimonial-carousel">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        {% for grupp in ansvarsgrupper %}
+                        <div>
+
+                            <div class="section-title">
+                                <h4><b>{{ grupp.name }}</b></h4>
+                            </div>
+                            {{ grupp.description }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

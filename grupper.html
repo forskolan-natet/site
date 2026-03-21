@@ -45,50 +45,52 @@ order: 6
 
 
                 <div class="block">
-                    <h4 style="margin-top: 30px">Genom ansvarsgrupperna:</h4>
+                    <h4>Genom ansvarsgrupperna:</h4>
 
                     <ul>
                         <li>tar vi gemensamt ansvar för förskolans miljö och drift</li>
                         <li>skapar vi gemenskap och lär känna varandra</li>
                         <li>får vi insyn i hur förskolan fungerar i praktiken</li>
                     </ul>
-                    <p style="margin-top: 30px;">
-                        Insatserna är både praktiska och organisatoriska och sker löpande under året samt vid gemensamma
-                        aktiviteter som städ- och fixardagar. Alla bidrag – stora som små – är viktiga och gör skillnad.
-                    </p>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <p style="margin-top: 30px;">
+                Insatserna är både praktiska och organisatoriska och sker löpande under året samt vid gemensamma
+                aktiviteter som städ- och fixardagar. Alla bidrag – stora som små – är viktiga och gör skillnad.
+            </p>
         </div>
     </div>
     </div>
     {% if ansvarsgrupper.length > 0 %}
-<section id="testimonial">
-    <div class="container">
-        <div class="row">
-            <div class="section-title text-center">
-                <h2>Våra ansvarsgrupper</h2>
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h3>Våra ansvarsgrupper</h3>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="testimonial-carousel">
-                    <div id="testimonial-slider" class="owl-carousel">
-                        {% for grupp in ansvarsgrupper %}
-                        <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-carousel">
+                        <div id="testimonial-slider" class="owl-carousel">
+                            {% for grupp in ansvarsgrupper %}
+                            <div>
 
-                            <div class="section-title">
-                                <h4><b>{{ grupp.name }}</b></h4>
+                                <div class="section-title">
+                                    <h4><b>{{ grupp.name }}</b></h4>
+                                </div>
+                                {{ grupp.description }}
                             </div>
-                            {{ grupp.description }}
+                            {% endfor %}
                         </div>
-                        {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-{% endif %}
+    </section>
+    {% endif %}
 </section>
 <!--Board start-->
 <section id="board">
@@ -153,43 +155,21 @@ order: 6
 <section id="call-to-action">
     <div class="container">
         <div class="row">
-            <h3>Ett gemensamt ansvar och delad glädje</h3>
-            <p>
-                Att vara del av ett föräldrakooperativ innebär engagemang, men också gemenskap, inflytande och närhet.
-                Tillsammans skapar vi en förskola där barnen står i centrum och där vi vuxna lär känna varandra och
-                bygger något gemensamt.
-            </p>
-            <p>
-                Har du frågor om vad föräldrainsatsen innebär? Kontakta ordförande:
-            </p>
-        </div>
-    </div>
-</section>
-{% if ansvarsgrupper.length > 0 %}
-<section id="testimonial">
-    <div class="container">
-        <div class="row">
-            <div class="section-title text-center">
-                <h2>Våra ansvarsgrupper</h2>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-md-12">
-                <div class="testimonial-carousel">
-                    <div id="testimonial-slider" class="owl-carousel">
-                        {% for grupp in ansvarsgrupper %}
-                        <div>
-
-                            <div class="section-title">
-                                <h4><b>{{ grupp.name }}</b></h4>
-                            </div>
-                            {{ grupp.description }}
-                        </div>
-                        {% endfor %}
-                    </div>
+                <div class="block">
+                    <h3>Ett gemensamt ansvar och delad glädje</h3>
+                    <p>
+                        Att vara del av ett föräldrakooperativ innebär engagemang, men också gemenskap, inflytande och
+                        närhet.
+                        Tillsammans skapar vi en förskola där barnen står i centrum och där vi vuxna lär känna varandra
+                        och
+                        bygger något gemensamt.
+                    </p>
+                    <p>
+                        Har du frågor om vad föräldrainsatsen innebär? Kontakta ordförande:
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-{% endif %}

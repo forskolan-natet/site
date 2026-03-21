@@ -1052,6 +1052,28 @@ section[data-background="forest"] {
 /*---------------------------------------------
 					Contact Close
 -----------------------------------------------*/
+/*---------------------------------------------
+          Collaboration(?) Start
+-----------------------------------------------*/
+
+#collaboration {
+  text-align: center;
+  padding: 65px;
+}
+
+#collaboration .block h4 {
+  margin-top: 30px;
+}
+
+#collaboration #testimonial {
+  padding: 50px;
+}
+
+
+/*---
+  collaboration stop
+---*/
+
 /*--------- Heading------------*/
 .heading {
   padding-bottom: 60px;
